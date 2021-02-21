@@ -15,9 +15,8 @@ var scontoAnziani= 0.6;
 
 var  scontoMinorenni= 0.8;
 
-var prezzo_biglietto
-
-
+var prezzo
+ 
 
 /*
 
@@ -43,12 +42,12 @@ sezione di raccolta dati utente (prompt/input)
 if (anni>65){
     prezzo_biglietto= kilometri * PREZZO_KM*scontoAnziani;
     console.log(kilometri * PREZZO_KM*scontoAnziani);
-    document.getElementById("biglietto_stampato").innerHTML=kilometri+("km")+(" ")+anni+("anni")+kilometri * PREZZO_KM*scontoAnziani+("euro");
+    document.getElementById("biglietto_stampato").innerHTML=kilometri+("km")+(" ")+anni+("anni")+(" ")+kilometri * PREZZO_KM*scontoAnziani+("prezzo")+(" ")+("scontato");
 } else if (anni<18) {
     console.log(kilometri * PREZZO_KM*scontoMinorenni);
-    document.getElementById("biglietto_stampato").innerHTML=kilometri+("km")+(" ")+anni+("anni")+kilometri * PREZZO_KM*scontoMinorenni+("euro");
+    document.getElementById("biglietto_stampato").innerHTML=kilometri+("km")+(" ")+anni+("anni")+(" ")+kilometri * PREZZO_KM*scontoMinorenni+("prezzo")+(" ")+("scontato");
 } else {
-    document.getElementById("biglietto_stampato").innerHTML=kilometri+("km")+(" ")+anni+("anni")+kilometri * PREZZO_KM+("euro");
+    document.getElementById("biglietto_stampato").innerHTML=kilometri+("km")+(" ")+anni+("anni")+(" ")+kilometri * PREZZO_KM+("euro");
 }
 
 
